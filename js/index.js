@@ -15,7 +15,7 @@ const searchText =() =>{
         
     }
     else{
-        displayResultURL(`http://openlibrary.org/search.json?q=${inputValue}`);  
+        displayResultURL(`https://openlibrary.org/search.json?q=${inputValue}`);  
     }     
 }
 
