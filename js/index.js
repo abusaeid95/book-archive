@@ -55,8 +55,9 @@ const displayResultURL = url =>{
               <img src="https://covers.openlibrary.org/b/id/${element.cover_i}-M.jpg" class="card-img-top img" alt="...">
               <div class="card-body">
                 <h5 class="card-title">${element.title}</h5>
-                <p class="card-text">by ${element.author_name}</p>
-                <p class="card-text"><small class="text-muted">First published in ${element.first_publish_year}</small></p>
+                <p class="card-text">by ${element.author_name ? element.author_name[0] : "N/A"}</p>
+                <p class="card-text"><small class="text-muted">Publisher ${element.publisher ? element.publisher[0] : "N/A"}</small></p>
+                <p class="card-text"><small class="text-muted">First published in ${element.first_publish_year ? element.first_publish_year : "N/A"}</small></p>
               </div>
             </div>
             `;
