@@ -1,6 +1,12 @@
-/* body{
-    background-color: aquamarine;
-} */
+
+/* background */
+body{
+    background-color: #abccaba1;
+}
+/* if no img found */
 .img{
     background-image: url(../images/images.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
